@@ -1,9 +1,10 @@
 VAGRANT_COMMAND = ARGV[0]
 
 Vagrant.configure("2") do |config|
-  config.vm.box = "bento/ubuntu-20.04"
+  config.vm.box = "bento/ubuntu-20.04-arm64"
+  #config.vm.box_version = "202112.19.0"
   
-  config.vm.provider "virtualbox" do |v|
+  config.vm.provider "parallels" do |v|
     v.memory = 10240
     v.cpus = 3
   end

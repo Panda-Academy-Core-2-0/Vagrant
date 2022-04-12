@@ -24,7 +24,7 @@
   roles:
     - user
     - packages
-    - geerlingguy.docker
+    - geerlingguy.docker_arm
     - christiangda.awscli
     - christiangda.awscli_configure
     - diodonfrost.terraform
